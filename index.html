@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <header>
+
+            <h1>ReDI company</h1>
+
+        </header>
+        <main>
+            <div class="heading-form1">
+            <h2>Application</h2>
+            <p>Status:<span>Open</span></p>
+        </div>
+            <form name="form1"  id="FormularID" autocomplete="off" method="GET" >
+                <fieldset>
+                    
+                    <label for="fname">FirstName</label><br>
+                    <input name="fname" id="fname" type="text" value="" required autofocus tabindex="1" placeholder="Basel"
+                    minlength="4" maxlength="10" size="10"
+                    pattern="[a-z]{3,9}" accesskey="f"><br>
+                    <br>
+
+                    <label for="birth">Date of Birth</label><br/>
+                    <input name="birth" type="text" value="" placeholder="19.10.1990" id="birth"required accesskey="d"/>
+                    <br>
+                    <br>
+
+                    <label for="mail">Email</label><br/>
+                    <input name="mail" type="email" value="" required placeholder="basel.nabelsi@gmail.com"id="mail" size="40" maxLength="64" pattern=".+@gmail.com"
+                    title="Please enter only a agoogle-mail address" accesskey="e"/>
+                    <br>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <label for="lastName">lastName</label><br/>
+                    <input name="lastname" type="text" value="" id="lastName" required accesskey="l"/>
+                    <br>
+                    <br>
+
+                    <label for="tel">TelefonNumber</label><br/>
+                    <input name="tel" type="tel" value="" required  pattern="[0-9]{4}-[0-9]{3}-[0-9]{5}" size="20" minlength="10" maxlength="20"
+                    
+                    placeholder="0176-420-46790"
+                    accesskey="t"/>
+                    <br/>
+                </fieldset>
+            </form>
+            <form id="form_2">
+                <p>About you (max 200 Charachter)</p>
+                <textarea cols="30" rows="2" >add your note</textarea maxlength="5"><br/>
+                <p>Are you over 18 years old</p>
+                <div id="radio">
+                
+               
+                <input checked="checked" name="sex" type="radio" value="male"/>
+                <label for="" class="radio"> Yes</label>
+               
+                
+                <input name="sex" type="radio" value="female"/>
+                <label for="" class="radio">No</label>
+            </div>
+                
+             
+
+            </form>
+        
+            <table class="Table">
+                <thead>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </tr>
+        </table>
+    
+        <input type="submit" name="Absenden" value="Submit" form="FormularID">
+     
+    </main>
+
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
